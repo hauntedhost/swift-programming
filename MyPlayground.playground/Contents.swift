@@ -3,7 +3,7 @@
 import Cocoa
 
 // declare and initialize a string
-var greeting: String = "Hello, playground"
+var greeting: String = "👻 Hello, playground"
 greeting += "!"
 
 // declare and initialize an integer
@@ -26,3 +26,15 @@ let townName: String = "Asheville"
 
 let townDescription =
   "\(townName) has a population of \(townPopulation) and \(townNumStopLights) stop lights."
+
+// unicode string index shenanigans
+let startIndex = greeting.startIndex
+let charIndex = greeting.index(startIndex, offsetBy: 6)
+greeting[charIndex]
+greeting[startIndex...charIndex]
+
+// for in loop visuals
+for i in 1...100 where i % 2 == 0 {
+  sin(Double(i))
+  tan(Double(i))
+}
