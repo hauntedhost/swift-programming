@@ -1,9 +1,9 @@
 
 // four ways to declare and initialize a dictionary
-var person1: Dictionary<String, Int> = [:]
-var person2 = Dictionary<String, Int>()
-var person3: [String:Int] = [:]
-var person4 = [String:Int]()
+var dict1: Dictionary<String, Int> = [:]
+var dict2 = Dictionary<String, Int>()
+var dict3: [String:Int] = [:]
+var dict4 = [String:Int]()
 
 // create a dictionary of movie ratings
 var movieRatings = [
@@ -22,7 +22,7 @@ print("moonlightRating: \(moonlightRating!)")
 
 // directly add/update key value
 print("---")
-movieRatings["Cameraperson"] = 99
+movieRatings["Cameradict"] = 99
 print("movieRatings: \(movieRatings)")
 
 // update with updateValue method
