@@ -1,5 +1,11 @@
 import Foundation
 
+// four different ways to declare and initialize an array
+var fruitsA: Array<String> = []
+var fruitsB = Array<String>()
+var fruitsC: [String] = []
+var fruitsD = [String]()
+
 // declare and initialize fruits array
 var fruits: [String] = []
 
