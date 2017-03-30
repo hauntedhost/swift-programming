@@ -19,4 +19,8 @@ class Monster {
       print("The \(name) monster hasn't found a town to terrorize yet")
     }
   }
+
+  func move(to newTown: inout Town) {
+    town = newTown
+  }
 }

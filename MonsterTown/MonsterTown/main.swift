@@ -26,7 +26,12 @@ zombie.name = "Fred"
 
 zombie.terrorizeTown()
 
-zombie.town = asheville
+// interesting: zombie.terrorizeTown does not mutate asheville.population
+// even after passing it as a reference
+
+//zombie.town = asheville
+zombie.move(to: &asheville)
+
 zombie.terrorizeTown()
 asheville.printDescription()
 zombie.town?.printDescription()
