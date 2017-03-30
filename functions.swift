@@ -129,3 +129,16 @@ let groceries = [
   "black beans",
 ]
 print("beans: \(siftBeans(from: groceries))")
+
+// into the void
+func sayHello1() {
+  print("hello!")
+}
+func sayHello2() -> Void {
+  print("hello!")
+}
+func sayHello3() -> () {
+  print("hello!")
+}
+let void = sayHello1()
+print("void: \(void)")
