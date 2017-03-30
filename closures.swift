@@ -36,6 +36,13 @@ func makeAdder(_ a: Int) -> (Int) -> Int {
 let addFive = makeAdder(5)
 print("addFive(10): \(addFive(10))")
 
+// return closure function directly
+func makeAdder2(_ a: Int) -> (Int) -> Int {
+  return { a + $0 }
+}
+let addTen = makeAdder2(10)
+print("addTen(100): \(addTen(100))")
+
 // functions as arguments
 func mapNums(_ list: [Int], _ fn: (Int) -> Int) -> [Int] {
   var result: [Int] = []
