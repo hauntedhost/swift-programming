@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1402E5EE1E8DC567003EDA34 /* Mayor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1402E5ED1E8DC567003EDA34 /* Mayor.swift */; };
 		14A044B61E8CB90B00EA9998 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A044B51E8CB90B00EA9998 /* main.swift */; };
 		14A044BD1E8CBAB500EA9998 /* Town.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A044BC1E8CBAB500EA9998 /* Town.swift */; };
 		14A044BF1E8CBC2E00EA9998 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A044BE1E8CBC2E00EA9998 /* Monster.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1402E5ED1E8DC567003EDA34 /* Mayor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mayor.swift; sourceTree = "<group>"; };
 		14A044B21E8CB90B00EA9998 /* MonsterTown */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MonsterTown; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A044B51E8CB90B00EA9998 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		14A044BC1E8CBAB500EA9998 /* Town.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Town.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				14A044C01E8CBDBB00EA9998 /* Zombie.swift */,
 				14A044BE1E8CBC2E00EA9998 /* Monster.swift */,
 				14A044BC1E8CBAB500EA9998 /* Town.swift */,
+				1402E5ED1E8DC567003EDA34 /* Mayor.swift */,
 			);
 			path = MonsterTown;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 				14A044C11E8CBDBB00EA9998 /* Zombie.swift in Sources */,
 				14A044BF1E8CBC2E00EA9998 /* Monster.swift in Sources */,
 				14A044BD1E8CBAB500EA9998 /* Town.swift in Sources */,
+				1402E5EE1E8DC567003EDA34 /* Mayor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +269,7 @@
 				14A044BB1E8CB90B00EA9998 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

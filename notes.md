@@ -53,3 +53,8 @@ if case 400...499 = statusCode {
 - classic: `for i in 1...10 {}`
 - unbound: `for _ in 1...10 {}`
 - where: `for i in 1...10 where i % 3 == 0 {}`
+
+## Properties
+
+- class, struct and enum can all have properties
+- properties can be stored or computed
