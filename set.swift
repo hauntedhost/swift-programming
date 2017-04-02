@@ -1,7 +1,7 @@
 // three ways to declare and initialize a set
-var set1: Set<String> = []
-var set2 = Set<String>()
-var set3 = Set([1, 2, 3])
+let set1: Set<Int> = [1, 2, 3]
+let set2: Set = [1, 2, 3]
+let set3 = Set<Int>([1, 2, 3])
 
 // create set and insert additional items
 var myFruits: Set<String> = ["orange", "mango"]

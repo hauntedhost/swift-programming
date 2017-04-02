@@ -164,6 +164,6 @@ let tree = BinaryTree.both(
     left: .none(value: 13),
     right: .none(value: 22)
   ),
-  right: BinaryTree.none(value: 30)
+  right: .none(value: 30)
 )
 print(tree)
