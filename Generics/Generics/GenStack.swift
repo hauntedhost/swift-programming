@@ -15,6 +15,13 @@ struct GenStack<Element> {
     items.append(newItem)
   }
 
+  mutating func pushAll<S: Sequence>(_ sequence: S)
+  where S.Iterator.Element == Element {
+    for item in sequence {
+      self.push(item)
+    }
+  }
+
   mutating func pop() -> Element? {
     guard !items.isEmpty else {
       return nil
@@ -29,10 +36,26 @@ struct GenStack<Element> {
     }
     return result
   }
+
+  func filter(_ f: (Element) -> Bool) -> [Element] {
+    var result: [Element] = []
+    for item in items {
+      if f(item) {
+        result.append(item)
+      }
+    }
+    return result
+  }
 }
 
 extension GenStack {
   init(_ elements: [Element]) {
     self.items = elements
+  }
+}
+
+extension GenStack: Sequence {
+  func makeIterator() -> GenStackIterator<Element> {
+    return GenStackIterator(stack: self)
   }
 }

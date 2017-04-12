@@ -113,3 +113,5 @@ if case 400...499 = statusCode {
 - two types of type constraints:
   1. constraint that a type be a subclass of a given class
   2. constraint that type conform to a protocol (or protocol composition)
+- protocols cannot be generic but they can have _associated types_
+- reach for protocols and generics before class inheritance, i.e. generics and compile-time polymorphism (parametric polymorphism) ftw

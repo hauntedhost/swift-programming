@@ -100,3 +100,37 @@ let animal = Animal(name: "Castle", city: "asheville")
 let person = Person(name: "castle", city: "Asheville")
 print("descriptionsMatch(animal, person) -> \(descriptionsMatch(animal, person))")
 
+// associated type protocols
+
+var stringStackIterator = GenStackIterator(stack: stringStack)
+while let value = stringStackIterator.next() {
+  print("got value: \(value)")
+}
+
+print("----")
+
+// GenStacks get for loops by conforming to Sequence
+for item in stringStack {
+  print("got item: \(item)")
+}
+
+// for loop does not mutate stringStack
+for item in stringStack {
+  print("got item: \(item)")
+}
+
+// type constraint where clauses
+
+
+stringStack.pushAll(["foo", "bar"])
+print(stringStack)
+
+stringStack.pushAll(GenStack(["baz", "buz"]))
+print(stringStack)
+
+// filter
+
+var animals = stringStack.filter {
+  $0 == "castle" || $0 == "sebastian"
+}
+print(animals)
