@@ -31,7 +31,7 @@ class Monster {
     }
   }
 
-  init(name: String, town: Town?) {
+  required init(name: String, town: Town?) {
     self.name = name
     self.town = town
   }

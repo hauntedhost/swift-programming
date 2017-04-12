@@ -30,7 +30,7 @@ vampire.terrorizeTown()
 vampire.victimPool = 500
 vampire.town?.printDescription()
 
-let zombie = Zombie(name: "Fred", town: asheville, walksWithLimp: true)
+let zombie = Zombie(name: "Fred", town: asheville)
 zombie.makeSpookyNoise()
 
 zombie.terrorizeTown()

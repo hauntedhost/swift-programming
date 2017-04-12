@@ -23,6 +23,12 @@ class Zombie: Monster {
     return "Braaains!"
   }
 
+  required init(name: String, town: Town?) {
+    self.walksWithLimp = true
+    self.isFallingApart = false
+    super.init(name: name, town: town)
+  }
+
   init(name: String, town: Town?, walksWithLimp: Bool, isFallingApart: Bool) {
     self.walksWithLimp = walksWithLimp
     self.isFallingApart = isFallingApart
