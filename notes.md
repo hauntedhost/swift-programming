@@ -1,4 +1,6 @@
-## Integers
+## Chapters 1-15
+
+### Integers
 
 - Int is 64 bit
 - Int.max and Int.min
@@ -16,19 +18,19 @@ func %%(_ num: Int, _ mod: Int) -> Int {
 }
 ```
 
-## Doubles / Floats
+### Doubles / Floats
 
 - Double is 64 bit
 - Float is 32 bit
 
-## Tuples
+### Tuples
 
 - `(404, "Not found")`
 - Access by index: `error.0`
 - Named elements `(code: 404, message: "Not found")`
 - Access by name: `error.code`
 
-## Switch
+### Switch
 
 - Not an expression wtf (╯°□°）╯︵ ┻━┻
 - Comma separated cases, also ranges `case 200...299:`
@@ -37,7 +39,7 @@ func %%(_ num: Int, _ mod: Int) -> Int {
 - `fallthrough` for "control transfer" ಠ_ಠ
 - Tuples matching with `_` wildcard `case (404, _):`
 
-## If/Else
+### If/Else
 
 - classic: if statement { } else {}
 
@@ -48,7 +50,7 @@ if case 400...499 = statusCode {
 }
 ```
 
-## For in
+### For in
 
 - classic: `for i in 1...10 {}`
 - unbound: `for _ in 1...10 {}`
@@ -86,3 +88,7 @@ if case 400...499 = statusCode {
 - a type that satisfies a protocol is said to confirm to it
 - protocol can be _extended_ e.g. to add additional functions
 - protocols can inherit, and even better can be _composed_
+
+## 20. Error Handling
+
+- recoverable vs _nonrecoverable_ errors
