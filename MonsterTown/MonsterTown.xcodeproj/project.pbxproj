@@ -66,10 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				14A044B51E8CB90B00EA9998 /* main.swift */,
-				14A044C01E8CBDBB00EA9998 /* Zombie.swift */,
+				1402E5ED1E8DC567003EDA34 /* Mayor.swift */,
 				14A044BE1E8CBC2E00EA9998 /* Monster.swift */,
 				14A044BC1E8CBAB500EA9998 /* Town.swift */,
-				1402E5ED1E8DC567003EDA34 /* Mayor.swift */,
+				14A044C01E8CBDBB00EA9998 /* Zombie.swift */,
 			);
 			path = MonsterTown;
 			sourceTree = "<group>";

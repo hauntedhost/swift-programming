@@ -10,9 +10,13 @@ import Foundation
 var quimby = Mayor()
 quimby.name = "Quimby"
 
-var asheville = Town()
-asheville.name = "Springfield"
-asheville.mayor = quimby
+var asheville = Town(
+  name: "Springfield",
+  numberOfStopLights: 18,
+  mayor: quimby,
+  population: 87_236
+)
+
 asheville.printDescription()
 
 asheville.changePopulation(by: 5_000)
