@@ -23,31 +23,18 @@ asheville.printDescription()
 asheville.changePopulation(by: 5_000)
 asheville.printDescription()
 
-let vampire = Monster()
-vampire.name = "Nosferatu"
+let vampire = Monster(name: "Nosferatu", town: asheville)
 vampire.makeSpookyNoise()
-
-vampire.town = asheville
 vampire.terrorizeTown()
 
 vampire.victimPool = 500
 vampire.town?.printDescription()
 
-let zombie = Zombie()
-zombie.name = "Fred"
+let zombie = Zombie(name: "Fred", town: asheville)
 zombie.makeSpookyNoise()
 
 zombie.terrorizeTown()
-
-// interesting: zombie.terrorizeTown does not mutate asheville.population
-// even after passing it as a reference
-// aha reason! town is a struct dawg
-
-zombie.town = asheville
-//zombie.move(to: &asheville)
-
 zombie.terrorizeTown()
-//asheville.printDescription()
 zombie.town?.printDescription()
 
 zombie.terrorizeTown()
@@ -58,5 +45,3 @@ zombie.town?.printDescription()
 
 zombie.terrorizeTown()
 zombie.town?.printDescription()
-
-

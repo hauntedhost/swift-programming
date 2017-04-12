@@ -17,7 +17,7 @@ class Monster {
   }
 
   // instance variables
-  var name = "Monster"
+  var name: String
   var town: Town?
   var numAttacks = 0
 
@@ -29,6 +29,11 @@ class Monster {
     set(newVictimPool) {
       town?.population = newVictimPool
     }
+  }
+
+  init(name: String, town: Town?) {
+    self.name = name
+    self.town = town
   }
 
   // instance function
