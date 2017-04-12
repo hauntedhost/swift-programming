@@ -30,18 +30,23 @@ vampire.terrorizeTown()
 vampire.victimPool = 500
 vampire.town?.printDescription()
 
-let zombie = Zombie(name: "Fred", town: asheville)
-zombie.makeSpookyNoise()
+var zombie: Zombie? = Zombie(name: "Fred", town: asheville)
 
-zombie.terrorizeTown()
-zombie.terrorizeTown()
-zombie.town?.printDescription()
+if let zombie = zombie {
+  zombie.makeSpookyNoise()
 
-zombie.terrorizeTown()
-zombie.town?.printDescription()
+  zombie.terrorizeTown()
+  zombie.terrorizeTown()
+  zombie.town?.printDescription()
 
-zombie.terrorizeTown()
-zombie.town?.printDescription()
+  zombie.terrorizeTown()
+  zombie.town?.printDescription()
 
-zombie.terrorizeTown()
-zombie.town?.printDescription()
+  zombie.terrorizeTown()
+  zombie.town?.printDescription()
+
+  zombie.terrorizeTown()
+  zombie.town?.printDescription()
+}
+
+zombie = nil
