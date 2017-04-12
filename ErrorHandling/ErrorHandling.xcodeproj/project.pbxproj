@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		14741E011E9EB86000D70CD8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14741E001E9EB86000D70CD8 /* main.swift */; };
 		14741E081E9EB86E00D70CD8 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14741E071E9EB86E00D70CD8 /* Token.swift */; };
+		14741E0A1E9EBEC000D70CD8 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14741E091E9EBEC000D70CD8 /* Lexer.swift */; };
+		14741E0C1E9EBED300D70CD8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14741E0B1E9EBED300D70CD8 /* Parser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +29,8 @@
 		14741DFD1E9EB86000D70CD8 /* ErrorHandling */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ErrorHandling; sourceTree = BUILT_PRODUCTS_DIR; };
 		14741E001E9EB86000D70CD8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		14741E071E9EB86E00D70CD8 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		14741E091E9EBEC000D70CD8 /* Lexer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
+		14741E0B1E9EBED300D70CD8 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,9 @@
 		14741DFF1E9EB86000D70CD8 /* ErrorHandling */ = {
 			isa = PBXGroup;
 			children = (
+				14741E091E9EBEC000D70CD8 /* Lexer.swift */,
 				14741E001E9EB86000D70CD8 /* main.swift */,
+				14741E0B1E9EBED300D70CD8 /* Parser.swift */,
 				14741E071E9EB86E00D70CD8 /* Token.swift */,
 			);
 			path = ErrorHandling;
@@ -124,7 +130,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14741E0C1E9EBED300D70CD8 /* Parser.swift in Sources */,
 				14741E011E9EB86000D70CD8 /* main.swift in Sources */,
+				14741E0A1E9EBEC000D70CD8 /* Lexer.swift in Sources */,
 				14741E081E9EB86E00D70CD8 /* Token.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

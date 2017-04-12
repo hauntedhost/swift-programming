@@ -8,3 +8,7 @@
 
 import Foundation
 
+enum Token {
+  case number(Int)
+  case plus
+}
