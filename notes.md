@@ -79,3 +79,10 @@ if case 400...499 = statusCode {
 - swift's basic types are value types: Array, Dictionary, Int, String
 - reference types retain pointers to same instance
 - avoid using reference type properties in value types (e.g. structs)
+
+## 19. Protocols
+
+- defines an interface you want a type to satisfy
+- a type that satisfies a protocol is said to confirm to it
+- protocol can be _extended_ e.g. to add additional functions
+- protocols can inherit, and even better can be _composed_

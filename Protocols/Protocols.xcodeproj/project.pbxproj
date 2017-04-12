@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		142E5CB81E91BB6A00422910 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142E5CB71E91BB6A00422910 /* main.swift */; };
 		142E5CD21E91BCD200422910 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142E5CD11E91BCD200422910 /* Person.swift */; };
+		14741DCD1E9E87D800D70CD8 /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14741DCC1E9E87D800D70CD8 /* Family.swift */; };
+		14741DCF1E9E8B6000D70CD8 /* TabularDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14741DCE1E9E8B6000D70CD8 /* TabularDataSource.swift */; };
+		14741DD11E9EAADE00D70CD8 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14741DD01E9EAADE00D70CD8 /* City.swift */; };
+		14741DD51E9EB4AD00D70CD8 /* Printer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14741DD41E9EB4AD00D70CD8 /* Printer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +31,10 @@
 		142E5CB41E91BB6A00422910 /* Protocols */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Protocols; sourceTree = BUILT_PRODUCTS_DIR; };
 		142E5CB71E91BB6A00422910 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		142E5CD11E91BCD200422910 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		14741DCC1E9E87D800D70CD8 /* Family.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Family.swift; sourceTree = "<group>"; };
+		14741DCE1E9E8B6000D70CD8 /* TabularDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabularDataSource.swift; sourceTree = "<group>"; };
+		14741DD01E9EAADE00D70CD8 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		14741DD41E9EB4AD00D70CD8 /* Printer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Printer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +67,12 @@
 		142E5CB61E91BB6A00422910 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				14741DCC1E9E87D800D70CD8 /* Family.swift */,
 				142E5CB71E91BB6A00422910 /* main.swift */,
+				14741DD41E9EB4AD00D70CD8 /* Printer.swift */,
 				142E5CD11E91BCD200422910 /* Person.swift */,
+				14741DCE1E9E8B6000D70CD8 /* TabularDataSource.swift */,
+				14741DD01E9EAADE00D70CD8 /* City.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -92,7 +104,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = sean;
 				TargetAttributes = {
 					142E5CB31E91BB6A00422910 = {
@@ -123,8 +135,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14741DCF1E9E8B6000D70CD8 /* TabularDataSource.swift in Sources */,
+				14741DD11E9EAADE00D70CD8 /* City.swift in Sources */,
+				14741DD51E9EB4AD00D70CD8 /* Printer.swift in Sources */,
 				142E5CD21E91BCD200422910 /* Person.swift in Sources */,
 				142E5CB81E91BB6A00422910 /* main.swift in Sources */,
+				14741DCD1E9E87D800D70CD8 /* Family.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +232,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -254,6 +271,7 @@
 				142E5CBD1E91BB6A00422910 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

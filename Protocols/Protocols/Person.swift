@@ -9,5 +9,13 @@
 import Foundation
 
 struct Person {
-  
+  let name: String
+  let age: Int
+  let city: City
+
+  init(name: String, age: Int, city: City) {
+    self.name = name
+    self.age = age
+    self.city = city
+  }
 }

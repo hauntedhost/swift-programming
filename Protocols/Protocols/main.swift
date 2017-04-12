@@ -8,64 +8,21 @@
 
 import Foundation
 
-extension Array {
-  subscript (safe index: Index) -> Element? {
-    return index < count ? self[index] : nil
-  }
-}
+// table printer using structs for data, and protocols + extensions for printer
 
-func leftPad(_ string: String, _ len: Int) -> String {
-  let paddingCount = max(0, len - string.characters.count)
-  let padding = repeatElement(" ", count: paddingCount).joined(separator: "")
-  return "\(string)\(padding)"
-}
+let omlors = Family(
+  surname: "Omlor",
+  members: [
+    Person(name: "Alli", age: 26, city: City(name: "Meridian", state: "MS")),
+    Person(name: "Sean", age: 41, city: City(name: "Philadelphia", state: "PA")),
+    Person(name: "Sebastian", age: 13, city: City(name: "Oakland", state: "CA")),
+    Person(name: "Castle", age: 1, city: City(name: "Rutherfordton", state: "NC")),
+  ]
+)
 
-func maxColumnWidths(_ rows: [[String]]) -> [Int] {
-  var columnWidths: [Int] = []
-  for row in rows {
-    for (i, item) in row.enumerated() {
-      let itemWidth = item.characters.count
-      if let currentWidth = columnWidths[safe: i] {
-        columnWidths[i] = itemWidth > currentWidth ? itemWidth : currentWidth
-      } else {
-        columnWidths.append(itemWidth)
-      }
-    }
-  }
-  return columnWidths
-}
+omlors.printTable()
 
-func dividerFor(columnWidths: [Int]) -> String {
-  return "+" + columnWidths.map {
-    repeatElement("-", count: $0 + 2).joined(separator: "")
-  }.joined(separator: "+") + "+"
-}
-
-func printTable(_ rows: [[String]], columnLabels: String...) {
-
-  let columnWidths: [Int] = maxColumnWidths(rows + [columnLabels])
-  let divider = dividerFor(columnWidths: columnWidths)
-
-  print(divider)
-
-  var labelRow = "|"
-  for (i, columnLabel) in columnLabels.enumerated() {
-    labelRow += " \(leftPad(columnLabel, columnWidths[i])) |"
-  }
-  print(labelRow)
-
-  print(divider)
-
-  for row in rows {
-    var dataRow = "|"
-    for (i, item) in row.enumerated() {
-      dataRow += " \(leftPad(item, columnWidths[i])) |"
-    }
-    print(dataRow)
-  }
-
-  print(divider)
-}
+// table printer using nested arrays for data and static functions for printer
 
 let rows = [
   ["Alli", "26", "Meridian"],
@@ -81,5 +38,5 @@ let rowsWithState = [
   ["Sebastian", "13", "Oakland", "CA"],
 ]
 
-printTable(rows, columnLabels: "Name", "Age", "City")
-printTable(rowsWithState, columnLabels: "Name", "Age", "City", "State")
+Printer.printTable(rows, columnLabels: "Name", "Age", "City")
+Printer.printTable(rowsWithState, columnLabels: "Name", "Age", "City", "State")
