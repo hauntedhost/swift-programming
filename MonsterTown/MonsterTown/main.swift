@@ -11,6 +11,7 @@ var quimby = Mayor()
 quimby.name = "Quimby"
 
 var asheville = Town(
+  region: "Southeast",
   name: "Springfield",
   numberOfStopLights: 18,
   mayor: quimby,

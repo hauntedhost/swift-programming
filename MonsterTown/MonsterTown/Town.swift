@@ -9,15 +9,15 @@ import Foundation
 
 struct Town {
   // static "type level" constant
-  static let region = "South"
+  let region: String
 
   // instance variables
-  var name = "TownyTown"
-  var numberOfStopLights = 4
+  var name: String
+  var numberOfStopLights: Int
   var mayor: Mayor?
   
   // instance variable with `didSet` property observer
-  var population = 5_422 {
+  var population: Int {
     didSet(oldPopulation) {
       if population < oldPopulation {
         print("Oh no! \(name) just lost \(oldPopulation - population) citizens")
