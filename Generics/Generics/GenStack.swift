@@ -21,6 +21,14 @@ struct GenStack<Element> {
     }
     return items.removeLast()
   }
+
+  func map<U>(_ f: (Element) -> U) -> [U] {
+    var result: [U] = []
+    for item in items {
+      result.append(f(item))
+    }
+    return result
+  }
 }
 
 extension GenStack {

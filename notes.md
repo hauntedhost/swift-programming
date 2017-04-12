@@ -56,12 +56,12 @@ if case 400...499 = statusCode {
 - unbound: `for _ in 1...10 {}`
 - where: `for i in 1...10 where i % 3 == 0 {}`
 
-## 16. Properties
+## Chapter 16. Properties
 
 - class, struct and enum can all have properties
 - properties can be stored or computed
 
-## 17. Initializers
+## Chapter 17. Initializers
 
 ### Structs
 
@@ -75,21 +75,21 @@ if case 400...499 = statusCode {
 - classes get _empty_ initializer when defaults exist for all properties
 - classes do _not_ get a _memberwise_ initializer like structs
 
-## 18. Value vs Reference Types
+## Chapter 18. Value vs Reference Types
 
 - value types are copies (on write)
 - swift's basic types are value types: Array, Dictionary, Int, String
 - reference types retain pointers to same instance
 - avoid using reference type properties in value types (e.g. structs)
 
-## 19. Protocols
+## Chapter 19. Protocols
 
 - defines an interface you want a type to satisfy
 - a type that satisfies a protocol is said to confirm to it
 - protocol can be _extended_ e.g. to add additional functions
 - protocols can inherit, and even better can be _composed_
 
-## 20. Error Handling
+## Chapter 20. Error Handling
 
 - recoverable errors can be handled
 - _nonrecoverable_ errors are bugs that cause program to _trap_ (shutdown)
@@ -98,14 +98,18 @@ if case 400...499 = statusCode {
 - handling errors can be done with do/try/catch
 - handling errors in a function that is itself marked as `throws` can simply call `try` directly without do/catch
 
-## 21. Extensions
+## Chapter 21. Extensions
 
 - typealias allows definition of _synonyms_ for existing types
 - extensions on typealias are available on original type
 - types/classes can be extended to conform to protocols
 - oooh extensions can add an initializer w/out losing memberwise initializers
 
-## 22. Generics
+## Chapter 22. Generics
 
 - placeholder types, e.g. `<Element>` are used in type/func declarations
 - the placeholder type can then be used inside the structure/func itself
+- type constraints place restrictions on types that can be passed to generic functions and methods
+- two types of type constraints:
+  1. constraint that a type be a subclass of a given class
+  2. constraint that type conform to a protocol (or protocol composition)
