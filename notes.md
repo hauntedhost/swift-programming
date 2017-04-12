@@ -97,3 +97,10 @@ if case 400...499 = statusCode {
 - calls to funcs/methods marked with `throws` must be prepared to handle that error
 - handling errors can be done with do/try/catch
 - handling errors in a function that is itself marked as `throws` can simply call `try` directly without do/catch
+
+## 21. Extensions
+
+- typealias allows definition of _synonyms_ for existing types
+- extensions on typealias are available on original type
+- types/classes can be extended to conform to protocols
+- oooh extensions can add an initializer w/out losing memberwise initializers
