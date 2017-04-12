@@ -8,8 +8,8 @@
 import Foundation
 
 class Zombie: Monster {
-  var walksWithLimp = true
-  private(set) var isFallingApart = false
+  let walksWithLimp: Bool
+  private(set) var isFallingApart: Bool
  
   override var numAttacks: Int {
     didSet {
@@ -22,7 +22,22 @@ class Zombie: Monster {
   override class var spookyNoise: String {
     return "Braaains!"
   }
-  
+
+  init(name: String, town: Town?, walksWithLimp: Bool, isFallingApart: Bool) {
+    self.walksWithLimp = walksWithLimp
+    self.isFallingApart = isFallingApart
+    super.init(name: name, town: town)
+  }
+
+  convenience init(name: String) {
+    self.init(
+      name: name,
+      town: nil,
+      walksWithLimp: true,
+      isFallingApart: false
+    )
+  }
+
   override func terrorizeTown() {
     if !isFallingApart {
       super.terrorizeTown()

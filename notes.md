@@ -58,3 +58,17 @@ if case 400...499 = statusCode {
 
 - class, struct and enum can all have properties
 - properties can be stored or computed
+
+## Initializers
+
+### Structs
+
+- by default structs get _empty_ initializer when defaults exist for all properties
+- by default struct gets a _memberwise_ init for all properties on the type in order
+- once you write a custom init, all memberwise initializers are removed
+
+### Classes
+
+- an initializer on a class is either a _designated_ or _convenience_ initializer
+- classes get _empty_ initializer when defaults exist for all properties
+- classes do _not_ get a _memberwise_ initializer like structs
