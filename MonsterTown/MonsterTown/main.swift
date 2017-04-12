@@ -13,9 +13,9 @@ quimby.name = "Quimby"
 var asheville = Town(
   region: "Southeast",
   name: "Springfield",
-  numberOfStopLights: 18,
+  population: 87_236,
   mayor: quimby,
-  population: 87_236
+  stoplights: 18
 )
 
 asheville.printDescription()

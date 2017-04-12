@@ -8,12 +8,12 @@
 import Foundation
 
 struct Town {
-  // static "type level" constant
+  // constants
   let region: String
+  let name: String
 
-  // instance variables
-  var name: String
-  var numberOfStopLights: Int
+  // variables
+  var numberOfStoplights: Int
   var mayor: Mayor?
   
   // instance variable with `didSet` property observer
@@ -48,11 +48,39 @@ struct Town {
     }
   }
 
+  init(
+    region: String,
+    name: String,
+    population: Int,
+    mayor: Mayor?,
+    stoplights: Int
+  ) {
+    self.region = region
+    self.name = name
+    self.population = population
+    self.mayor = mayor
+    self.numberOfStoplights = stoplights
+  }
+
+  init(
+    name: String,
+    population: Int,
+    stoplights: Int
+  ) {
+    self.init(
+      region: "N/A",
+      name: name,
+      population: population,
+      mayor: nil,
+      stoplights: stoplights
+    )
+  }
+
   func printDescription() {
     print([
       "The town of \(name) is \(townSize)",
       "with a population of \(population)",
-      "and \(numberOfStopLights) stop lights"
+      "and \(numberOfStoplights) stop lights"
     ].joined(separator: " "))
   }
 
