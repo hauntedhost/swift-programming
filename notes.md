@@ -104,3 +104,8 @@ if case 400...499 = statusCode {
 - extensions on typealias are available on original type
 - types/classes can be extended to conform to protocols
 - oooh extensions can add an initializer w/out losing memberwise initializers
+
+## 22. Generics
+
+- placeholder types, e.g. `<Element>` are used in type/func declarations
+- the placeholder type can then be used inside the structure/func itself
