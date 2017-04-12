@@ -48,13 +48,18 @@ struct Town {
     }
   }
 
-  init(
+  init?(
     region: String,
     name: String,
     population: Int,
     mayor: Mayor?,
     stoplights: Int
   ) {
+    guard population > 0 else {
+      print("Town must have at least one member!")
+      return nil
+    }
+
     self.region = region
     self.name = name
     self.population = population
@@ -62,7 +67,7 @@ struct Town {
     self.numberOfStoplights = stoplights
   }
 
-  init(
+  init?(
     name: String,
     population: Int,
     stoplights: Int
