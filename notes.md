@@ -54,12 +54,12 @@ if case 400...499 = statusCode {
 - unbound: `for _ in 1...10 {}`
 - where: `for i in 1...10 where i % 3 == 0 {}`
 
-## Properties
+## 16. Properties
 
 - class, struct and enum can all have properties
 - properties can be stored or computed
 
-## Initializers
+## 17. Initializers
 
 ### Structs
 
@@ -72,3 +72,10 @@ if case 400...499 = statusCode {
 - an initializer on a class is either a _designated_ or _convenience_ initializer
 - classes get _empty_ initializer when defaults exist for all properties
 - classes do _not_ get a _memberwise_ initializer like structs
+
+## 18. Value vs Reference Types
+
+- value types are copies (on write)
+- swift's basic types are value types: Array, Dictionary, Int, String
+- reference types retain pointers to same instance
+- avoid using reference type properties in value types (e.g. structs)
