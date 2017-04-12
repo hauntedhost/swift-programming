@@ -91,4 +91,9 @@ if case 400...499 = statusCode {
 
 ## 20. Error Handling
 
-- recoverable vs _nonrecoverable_ errors
+- recoverable errors can be handled
+- _nonrecoverable_ errors are bugs that cause program to _trap_ (shutdown)
+- functions marked `throws` indicates the function might emit an error
+- calls to funcs/methods marked with `throws` must be prepared to handle that error
+- handling errors can be done with do/try/catch
+- handling errors in a function that is itself marked as `throws` can simply call `try` directly without do/catch
