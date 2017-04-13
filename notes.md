@@ -133,3 +133,9 @@ if case 400...499 = statusCode {
 - weak references must always be var and always be optionals
 - Person is a class that owns assets, so it makes sense that it would keep strong references to the assets. Asset is a class that is owned by Person. if it wants a reference to its owner it should be weak.
 - by default captures in closures are made by taking _strong_ references
+
+## Chapter 26. Equatable and Comparable
+
+- equatable gives you `==` and `!=`
+- comparable gives you `<`, `>`, _and_ `==`, `!=`, `<=`, `>=`
+- comparable inherits from equatable, so to conform to comparable you must also conform to equatable
