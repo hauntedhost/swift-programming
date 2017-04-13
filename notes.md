@@ -121,3 +121,5 @@ if case 400...499 = statusCode {
 ### Protocol naming conventions:
 - "is a" protocols are *nouns* that often have suffix `Type` e.g. `Collection`, `Sequence`, `IntegerType`, `CollectionType`
 - "can do/be" protocols that describe capabilities end with suffixes `able`, `ible` or `ing` e.g. `Equatable`, or `Hashable`
+
+- note: be careful when writing protocol extensions that add properties or methods that are not default implementions for _requirements_ of the protocol

@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1426F10B1E9F0AAA00D7F594 /* Describable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426F10A1E9F0AAA00D7F594 /* Describable.swift */; };
+		1426F10D1E9F0AC700D7F594 /* EllipticalWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426F10C1E9F0AC700D7F594 /* EllipticalWorkout.swift */; };
+		1426F10F1E9F0AD500D7F594 /* TreadmillWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426F10E1E9F0AD500D7F594 /* TreadmillWorkout.swift */; };
 		14741E461E9F00D500D70CD8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14741E451E9F00D500D70CD8 /* main.swift */; };
+		14741E4D1E9F0A6700D70CD8 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14741E4C1E9F0A6700D70CD8 /* Exercise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1426F10A1E9F0AAA00D7F594 /* Describable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Describable.swift; sourceTree = "<group>"; };
+		1426F10C1E9F0AC700D7F594 /* EllipticalWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipticalWorkout.swift; sourceTree = "<group>"; };
+		1426F10E1E9F0AD500D7F594 /* TreadmillWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreadmillWorkout.swift; sourceTree = "<group>"; };
 		14741E421E9F00D500D70CD8 /* ProtocolExtensions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProtocolExtensions; sourceTree = BUILT_PRODUCTS_DIR; };
 		14741E451E9F00D500D70CD8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		14741E4C1E9F0A6700D70CD8 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +65,11 @@
 		14741E441E9F00D500D70CD8 /* ProtocolExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				1426F10A1E9F0AAA00D7F594 /* Describable.swift */,
+				1426F10C1E9F0AC700D7F594 /* EllipticalWorkout.swift */,
+				14741E4C1E9F0A6700D70CD8 /* Exercise.swift */,
 				14741E451E9F00D500D70CD8 /* main.swift */,
+				1426F10E1E9F0AD500D7F594 /* TreadmillWorkout.swift */,
 			);
 			path = ProtocolExtensions;
 			sourceTree = "<group>";
@@ -121,7 +133,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1426F10D1E9F0AC700D7F594 /* EllipticalWorkout.swift in Sources */,
+				1426F10F1E9F0AD500D7F594 /* TreadmillWorkout.swift in Sources */,
+				1426F10B1E9F0AAA00D7F594 /* Describable.swift in Sources */,
 				14741E461E9F00D500D70CD8 /* main.swift in Sources */,
+				14741E4D1E9F0A6700D70CD8 /* Exercise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +271,7 @@
 				14741E4B1E9F00D500D70CD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
