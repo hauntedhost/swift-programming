@@ -27,9 +27,19 @@ var dagger: Asset? = Asset(name: "Medieval Dagger", value: 9_400.00)
 bob?.takeOwnership(of: laptop!)
 bob?.takeOwnership(of: coffee!)
 
-// let's create a memory leak
 bob = nil
 laptop = nil
 coffee = nil
 dagger = nil
 
+// NOTE: when Asset.owner property is _not_ weak, only the dagger is deallocated
+// bob, laptop and coffee remain in a memory leak:
+//
+//Arc.Asset "Medieval Dagger" is being deallocated
+
+// when Asset.owner property is var weak everythign is deallocated properly:
+//
+//Arc.Person "Bob" is being deallocated
+//Arc.Asset "Macbook Air" is being deallocated
+//Arc.Asset "Double Espresso" is being deallocated
+//Arc.Asset "Medieval Dagger" is being deallocated

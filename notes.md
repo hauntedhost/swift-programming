@@ -129,3 +129,6 @@ if case 400...499 = statusCode {
 - you don't have to worry about memory management of value types
 - by default all references that you create are _strong_ references which means they increment the reference count of the instance they refer to
 - strong reference cycles is the term for when two instances have strong references to each other and are a kind of _memory leak_
+- weak references do not increase reference count and are deallocated when references to instance they point to are set to nil
+- weak references must always be var and always be optionals
+- Person is a class that owns assets, so it makes sense that it would keep strong references to the assets. Asset is a class that is owned by Person. if it wants a reference to its owner it should be weak.

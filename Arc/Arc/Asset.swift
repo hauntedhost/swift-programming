@@ -11,7 +11,7 @@ import Foundation
 class Asset: Describable {
   let name: String
   let value: Double
-  var owner: Person?
+  weak var owner: Person?
 
   var description: String {
     if let owner = owner {
