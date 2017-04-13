@@ -13,13 +13,12 @@ struct Point {
   let y: Int
 }
 
-extension Point: Equatable {
+// comparable inherits from equatable so requires both < and ==
+extension Point: Comparable {
   static func ==(left: Point, right: Point) -> Bool {
     return left.x == right.x && left.y == right.y
   }
-}
 
-extension Point: Comparable {
   static func <(left: Point, right: Point) -> Bool {
     return left.x < right.x && left.y < right.y
   }
