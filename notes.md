@@ -123,3 +123,9 @@ if case 400...499 = statusCode {
 - "can do/be" protocols that describe capabilities end with suffixes `able`, `ible` or `ing` e.g. `Equatable`, or `Hashable`
 
 - note: be careful when writing protocol extensions that add properties or methods that are not default implementions for _requirements_ of the protocol
+
+## Chapter 24. Memory Management and ARC
+
+- you don't have to worry about memory management of value types
+- by default all references that you create are _strong_ references which means they increment the reference count of the instance they refer to
+- strong reference cycles is the term for when two instances have strong references to each other and are a kind of _memory leak_
