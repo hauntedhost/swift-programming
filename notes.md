@@ -132,3 +132,4 @@ if case 400...499 = statusCode {
 - weak references do not increase reference count and are deallocated when references to instance they point to are set to nil
 - weak references must always be var and always be optionals
 - Person is a class that owns assets, so it makes sense that it would keep strong references to the assets. Asset is a class that is owned by Person. if it wants a reference to its owner it should be weak.
+- by default captures in closures are made by taking _strong_ references

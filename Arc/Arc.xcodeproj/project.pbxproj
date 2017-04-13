@@ -11,6 +11,7 @@
 		1426F1241E9F0E8100D7F594 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426F1231E9F0E8100D7F594 /* Person.swift */; };
 		1426F1261E9F0E8800D7F594 /* Describable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426F1251E9F0E8800D7F594 /* Describable.swift */; };
 		1426F1281E9F0FF500D7F594 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426F1271E9F0FF500D7F594 /* Asset.swift */; };
+		1426F12A1E9F162200D7F594 /* Accountant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426F1291E9F162200D7F594 /* Accountant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		1426F1231E9F0E8100D7F594 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		1426F1251E9F0E8800D7F594 /* Describable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Describable.swift; sourceTree = "<group>"; };
 		1426F1271E9F0FF500D7F594 /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		1426F1291E9F162200D7F594 /* Accountant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accountant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				1426F1271E9F0FF500D7F594 /* Asset.swift */,
 				1426F1251E9F0E8800D7F594 /* Describable.swift */,
 				1426F11C1E9F0E7600D7F594 /* main.swift */,
+				1426F1291E9F162200D7F594 /* Accountant.swift */,
 				1426F1231E9F0E8100D7F594 /* Person.swift */,
 			);
 			path = Arc;
@@ -133,6 +136,7 @@
 				1426F1261E9F0E8800D7F594 /* Describable.swift in Sources */,
 				1426F1241E9F0E8100D7F594 /* Person.swift in Sources */,
 				1426F1281E9F0FF500D7F594 /* Asset.swift in Sources */,
+				1426F12A1E9F162200D7F594 /* Accountant.swift in Sources */,
 				1426F11D1E9F0E7600D7F594 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

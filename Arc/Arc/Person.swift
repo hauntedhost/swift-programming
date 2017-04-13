@@ -11,6 +11,7 @@ import Foundation
 class Person: Describable {
   let name: String
   var assets: [Asset] = []
+  var accountant: Accountant = Accountant()
 
   var description: String {
     return "Person(\(name))"
@@ -18,11 +19,19 @@ class Person: Describable {
 
   init(name: String) {
     self.name = name
+    accountant.netWorthChangeHandler = { [weak self] netWorth in
+      self?.netWorthDidChange(to: netWorth)
+    }
   }
 
   func takeOwnership(of asset: Asset) {
     asset.owner = self
     assets.append(asset)
+    accountant.gained(asset)
+  }
+
+  func netWorthDidChange(to netWorth: Double) {
+    print("The net worth of \(self.name) is now \(netWorth)")
   }
 
   deinit {
