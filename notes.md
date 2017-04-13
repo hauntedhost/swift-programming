@@ -115,3 +115,9 @@ if case 400...499 = statusCode {
   2. constraint that type conform to a protocol (or protocol composition)
 - protocols cannot be generic but they can have _associated types_
 - reach for protocols and generics before class inheritance, i.e. generics and compile-time polymorphism (parametric polymorphism) ftw
+
+## Chapter 23. Protocol Extensions
+
+### Protocol naming conventions:
+- "is a" protocols are *nouns* that often have suffix `Type` e.g. `Collection`, `Sequence`, `IntegerType`, `CollectionType`
+- "can do/be" protocols that describe capabilities end with suffixes `able`, `ible` or `ing` e.g. `Equatable`, or `Hashable`
